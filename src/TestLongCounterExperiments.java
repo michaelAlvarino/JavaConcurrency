@@ -3,7 +3,7 @@
 
 public class TestLongCounterExperiments {
   public static void main(String[] args) {
-    final LongCounter lc = new LongCounter();
+    final thisLongCounter lc = new thisLongCounter();
     final int counts = 10_000_000;
     Thread t1 = new Thread(() -> {
       for (int i=0; i<counts; i++) 
@@ -22,7 +22,7 @@ public class TestLongCounterExperiments {
   }
 }
 
-class LongCounter {
+class thisLongCounter {
   public long count = 0;
   public synchronized void increment() {
     count = count + 1;

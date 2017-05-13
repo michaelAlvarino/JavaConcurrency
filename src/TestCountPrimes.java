@@ -72,7 +72,7 @@ public class TestCountPrimes {
     return lc.get();
   }
 }
-/*
+
 class LongCounter {
   private long count = 0;
   public synchronized void increment() {
@@ -82,4 +82,3 @@ class LongCounter {
     return count; 
   }
 }
-*/
